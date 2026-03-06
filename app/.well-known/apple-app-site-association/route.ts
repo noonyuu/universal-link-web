@@ -2,10 +2,15 @@ const aasa = {
   applinks: {
     details: [
       {
-        appID: "SDCTHQR6AD.com.noonyuu.UniversalLink",
-        paths: [
-          "NOT /open*app=false*",
-          "/open*",
+        appIDs: ["SDCTHQR6AD.com.noonyuu.UniversalLink"],
+        components: [
+          {
+            "NOT /": "/open",
+            "?": { app: "false" },
+          },
+          {
+            "/": "/open",
+          },
         ],
       },
     ],
