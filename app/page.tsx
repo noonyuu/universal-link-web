@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 
-const BASE_URL = "https://noonyuu.github.io/universal-link-web";
+const BASE_URL = "https://universal-link.noonyuu.com";
 
 export default function Home() {
   const [ffEnabled, setFfEnabled] = useState(false);

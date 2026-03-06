@@ -41,7 +41,7 @@ function OpenContent() {
             </div>
           </>
         )}
-        <a href="/universal-link-web/" className="text-sm text-blue-600 underline">
+        <a href="/" className="text-sm text-blue-600 underline">
           ← トップに戻る
         </a>
       </div>

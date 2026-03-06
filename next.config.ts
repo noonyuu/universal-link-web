@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/universal-link-web",
+  output: "standalone",
   trailingSlash: true,
   images: {
     unoptimized: true,
