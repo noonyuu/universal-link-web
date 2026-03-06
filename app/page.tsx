@@ -8,8 +8,9 @@ const BASE_URL = "https://noonyuu.github.io/universal-link-web";
 export default function Home() {
   const [ffEnabled, setFfEnabled] = useState(false);
 
-  const targetPath = ffEnabled ? "/open-ff-on" : "/open";
-  const qrUrl = `${BASE_URL}${targetPath}`;
+  const qrUrl = ffEnabled
+    ? `${BASE_URL}/open?app=false`
+    : `${BASE_URL}/open`;
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-8">
