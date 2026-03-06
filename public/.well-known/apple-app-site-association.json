@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appIDs": ["SDCTHQR6AD.com.noonyuu.UniversalLink"],
+        "appID": "SDCTHQR6AD.com.noonyuu.UniversalLink",
         "paths": [
           "NOT /universal-link-web/open*app=false*",
           "/universal-link-web/open*"
