@@ -1,5 +1,3 @@
-import { NextResponse } from "next/server";
-
 const aasa = {
   applinks: {
     details: [
@@ -22,5 +20,9 @@ const aasa = {
 };
 
 export async function GET() {
-  return NextResponse.json(aasa);
+  return new Response(JSON.stringify(aasa), {
+    headers: {
+      "content-type": "application/json",
+    },
+  });
 }
