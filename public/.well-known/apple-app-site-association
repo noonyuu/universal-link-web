@@ -1,12 +1,19 @@
 {
   "applinks": {
-    "apps": [],
     "details": [
       {
-        "appID": "SDCTHQR6AD.com.noonyuu.UniversalLink",
-        "paths": [
-          "NOT /open*app=false*",
-          "/open*"
+        "appIDs": ["SDCTHQR6AD.com.noonyuu.UniversalLink"],
+        "components": [
+          {
+            "/": "/open",
+            "?": { "app": "false" },
+            "exclude": true,
+            "comment": "FF ON: app=falseはアプリへの遷移を除外"
+          },
+          {
+            "/": "/open",
+            "comment": "FF OFF: アプリで開く"
+          }
         ]
       }
     ]
