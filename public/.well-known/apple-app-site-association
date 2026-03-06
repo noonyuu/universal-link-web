@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "SDCTHQR6AD.com.noonyuu.UniversalLink",
+        "paths": [
+          "NOT /open*app=false*",
+          "/open*"
+        ]
+      }
+    ]
+  }
+}
