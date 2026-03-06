@@ -5,6 +5,17 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async headers() {
+    return [
+      {
+        source: "/.well-known/apple-app-site-association",
+        headers: [
+          { key: "content-type", value: "application/json" },
+          { key: "vary", value: "" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
