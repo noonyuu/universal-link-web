@@ -2,11 +2,20 @@ import { NextResponse } from "next/server";
 
 const aasa = {
   applinks: {
-    apps: [],
     details: [
       {
-        appID: "SDCTHQR6AD.com.noonyuu.UniversalLink",
-        paths: ["NOT /open*app=false*", "/open*"],
+        appIDs: ["SDCTHQR6AD.com.noonyuu.UniversalLink"],
+        components: [
+          {
+            "NOT /": "/open",
+            "?": { app: "false" },
+            comment: "FF ON: app=falseの場合はアプリへの遷移を除外",
+          },
+          {
+            "/": "/open",
+            comment: "FF OFF: アプリで開く",
+          },
+        ],
       },
     ],
   },
