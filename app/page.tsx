@@ -9,7 +9,7 @@ export default function Home() {
   const [ffEnabled, setFfEnabled] = useState(false);
 
   const qrUrl = ffEnabled
-    ? `${BASE_URL}/open?app=false`
+    ? `${BASE_URL}/open-web`
     : `${BASE_URL}/open`;
 
   return (
@@ -49,8 +49,8 @@ export default function Home() {
           }`}
         >
           {ffEnabled
-            ? "AASA: NOT パターン適用中 → ブラウザで開く"
-            : "AASA: Universal Link 有効 → アプリで開く"}
+            ? "AASA: /open-web は未登録 → ブラウザで開く"
+            : "AASA: /open は登録済み → アプリで開く"}
         </div>
 
         {/* QR Code */}

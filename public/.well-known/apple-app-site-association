@@ -5,14 +5,7 @@
         "appID": "SDCTHQR6AD.com.noonyuu.UniversalLink",
         "components": [
           {
-            "/": "/open",
-            "?": { "app": "false" },
-            "exclude": true,
-            "comment": "FF ON: /open?app=false はブラウザで開く"
-          },
-          {
-            "/": "/open",
-            "comment": "FF OFF: /open はアプリで開く"
+            "/": "/open"
           }
         ]
       }
