@@ -5,7 +5,8 @@
         "appID": "SDCTHQR6AD.com.noonyuu.UniversalLink",
         "components": [
           {
-            "/": "/open"
+            "/": "/open",
+            "comment": "/open はアプリで開く（Universal Link有効）"
           }
         ]
       }
